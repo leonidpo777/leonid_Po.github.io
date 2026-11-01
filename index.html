@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Леонид Поляков | Data-аналитика коммерческой недвижимости</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Навигация -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-mono text-sm font-medium text-blue-400">LP // DATA_ANALYTICS</span>
+            <nav class="hidden sm:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition">Обо мне</a>
+                <a href="#project" class="hover:text-white transition">Суть проекта</a>
+                <a href="#stack" class="hover:text-white transition">Стек</a>
+                <a href="#roadmap" class="hover:text-white transition">Roadmap</a>
+            </nav>
+            <a href="https://github.com/" target="_blank" class="text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-300 px-3.5 py-2 rounded-lg border border-slate-800 transition">
+                GitHub ↗
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-28">
+
+        <!-- Hero / Обо мне -->
+        <section id="about" class="pt-8">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-mono text-blue-400 bg-blue-950/50 border border-blue-800/50 rounded-full">
+                Исследовательский и прикладной проект
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
+                Аналитика данных и логистики <br class="hidden sm:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+                    коммерческой недвижимости
+                </span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-3xl mb-10 leading-relaxed">
+                Разработка автоматизированной системы консолидации финансовой отчетности, выявления статистических аномалий и мониторинга логистических метрик на базе исторических данных.
+            </p>
+
+            <!-- Карточка "Обо мне" -->
+            <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
+                <h2 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Автор проекта</h2>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800/80 pb-6 mb-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Поляков Леонид</h3>
+                        <p class="text-slate-400 text-sm mt-1">Ученик 10 «В» класса, ГБОУ Школа № 192 (Москва)</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Физ-мат профиль</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Data Science</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Quantitative Analysis</span>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Специализируюсь на прикладном программировании на Python, математическом моделировании и анализе данных. В рамках проекта исследую методы оптимизации управленческого учета и операционной логистики для крупных объектов коммерческой недвижимости, переводя неструктурированные массивы первичной документации в интерактивные аналитические инструменты.
+                </p>
+            </div>
+        </section>
+
+        <!-- Суть проекта (Академичный текст) -->
+        <section id="project" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-mono text-blue-400 text-sm">01.</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Суть проекта</h2>
+                <div class="h-px bg-slate-800 flex-grow ml-4"></div>
+            </div>
+
+            <div class="space-y-6 text-slate-300 leading-relaxed bg-slate-900/30 border border-slate-800/60 rounded-2xl p-6 sm:p-10">
+                <p class="text-base sm:text-lg text-white font-medium">
+                    Проект направлен на создание комплексной архитектуры обработки, валидации и визуализации данных для оптимизации управления объектами коммерческой недвижимости.
+                </p>
+                <p class="text-sm sm:text-base text-slate-400">
+                    Эмпирическую базу исследования составляют неструктурированные массивы первичной учетной документации (выгрузки из систем 1С и многостраничные таблицы Microsoft Excel), аккумулированные за пятилетний период операционной деятельности. Основная проблема исходных данных заключается в высокой степени фрагментации, наличии синтаксических расхождений и отсутствии единого стандарта типизации.
+                </p>
+
+                <div class="grid sm:grid-cols-3 gap-6 pt-4">
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+                        <div class="text-blue-400 font-mono text-xs mb-2">ЭТАП I // ETL-ПАЙПЛАЙН</div>
+                        <h3 class="text-white font-semibold mb-2 text-sm">Консолидация и очистка</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Программная агрегация разрозненных таблиц за 5 лет, нормализация форматов данных, устранение дубликатов и приведение реляционных связей к единой аналитической схеме с использованием библиотеки Pandas.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+                        <div class="text-emerald-400 font-mono text-xs mb-2">ЭТАП II // ML & СТАТИСТИКА</div>
+                        <h3 class="text-white font-semibold mb-2 text-sm">Детекция аномалий</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Алгоритмический поиск нетипичных отклонений в арендных платежах, эксплуатационных расходах и логистических издержках для минимизации операционных рисков и ошибок ручного ввода.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+                        <div class="text-purple-400 font-mono text-xs mb-2">ЭТАП III // BI & ВИЗУАЛИЗАЦИЯ</div>
+                        <h3 class="text-white font-semibold mb-2 text-sm">Аналитические дашборды</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Построение интерактивных панелей мониторинга для сквозного анализа финансовых потоков (Cash Flow), динамики заполняемости площадей и пропускной способности логистических узлов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Стек технологий -->
+        <section id="stack" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-mono text-blue-400 text-sm">02.</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Стек технологий</h2>
+                <div class="h-px bg-slate-800 flex-grow ml-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Python -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-semibold text-white">Python 3.11+</span>
+                        <span class="font-mono text-xs text-blue-400 bg-blue-950/60 px-2 py-0.5 rounded">Core</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Базовый язык разработки. Реализация скриптов автоматизации, парсинга сложных выгрузок 1С и архитектуры приложения.
+                    </p>
+                </div>
+
+                <!-- Pandas & NumPy -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-semibold text-white">Pandas / NumPy</span>
+                        <span class="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded">Data</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Векторные вычисления, очистка многомерных таблиц Excel (OpenPyXL), агрегация временных рядов и работа с пропущенными значениями.
+                    </p>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-semibold text-white">Scikit-learn / SciPy</span>
+                        <span class="font-mono text-xs text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded">ML & Stats</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Методы статистического контроля, кластеризация контрагентов, алгоритмы поиска выбросов (Isolation Forest, Z-score) и прогнозирование.
+                    </p>
+                </div>
+
+                <!-- Visualization / UI -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-semibold text-white">Plotly / Android</span>
+                        <span class="font-mono text-xs text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">UI & BI</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Генерация интерактивных финансовых графиков, построение дашбордов и интеграция аналитических отчетов с мобильным интерфейсом.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-mono text-blue-400 text-sm">03.</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Roadmap проекта</h2>
+                <div class="h-px bg-slate-800 flex-grow ml-4"></div>
+            </div>
+
+            <div class="relative border-l border-slate-800 ml-3 sm:ml-6 space-y-10 pl-6 sm:pl-8">
+                
+                <!-- Этап 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 h-3.5 w-3.5 rounded-full bg-emerald-400 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                        <span class="font-mono text-xs text-emerald-400 font-medium">ВЫПОЛНЕНО // ЭТАП 1</span>
+                        <h3 class="text-base font-semibold text-white">Аудит данных и проектирование ETL-модуля</h3>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Сбор архивных выгрузок 1С и Excel за 5 лет. Написание парсеров на Python для стандартизации структуры таблиц, очистки от артефактов форматирования и формирования единого датасета.
+                    </p>
+                </div>
+
+                <!-- Этап 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 h-3.5 w-3.5 rounded-full bg-blue-400 ring-4 ring-slate-950 animate-pulse"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                        <span class="font-mono text-xs text-blue-400 font-medium">В РАБОТЕ // ЭТАП 2</span>
+                        <h3 class="text-base font-semibold text-white">Разработка алгоритмов поиска аномалий</h3>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Внедрение статистических фильтров и ML-моделей для автоматического выявления кассовых разрывов, нетипичных скачков издержек и отклонений в логистических цепочках.
+                    </p>
+                </div>
+
+                <!-- Этап 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 h-3.5 w-3.5 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                        <span class="font-mono text-xs text-slate-500 font-medium">ЗАПЛАНИРОВАНО // ЭТАП 3</span>
+                        <h3 class="text-base font-semibold text-slate-200">Система дашбордов и аналитика потоков</h3>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Визуализация ключевых метрик (NOI, Cash Flow, ротация арендаторов, загрузка логистики) в виде интерактивного веб-дашборда и клиентского приложения.
+                    </p>
+                </div>
+
+                <!-- Этап 4 -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 h-3.5 w-3.5 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                        <span class="font-mono text-xs text-slate-500 font-medium">ФИНАЛ // ЭТАП 4</span>
+                        <h3 class="text-base font-semibold text-slate-200">Тестирование на реальных кейсах и публикация</h3>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Оценка экономической эффективности внедрения алгоритма, подготовка технической документации, публикация репозитория и защита проекта.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10 mt-20">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+            <div>
+                © 2026 Поляков Леонид | Школа № 192, 10 «В»
+            </div>
+            <div class="flex gap-6">
+                <a href="mailto:example@mail.ru" class="hover:text-slate-300 transition">Email</a>
+                <a href="https://t.me/" target="_blank" class="hover:text-slate-300 transition">Telegram</a>
+                <a href="https://github.com/" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
